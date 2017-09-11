@@ -1,0 +1,17 @@
+{
+  "name": "mongodb-excercise-object-hash",
+  "version": "0.0.1",
+  "description": "Excericse for comparing data by ObjectID",
+  "license": "MIT",
+  "repository": {
+    "url": "",
+    "type": "GIT"
+  },
+  "engines": {
+    "node": ">=8.4"
+  },
+  "dependencies": {
+    "mongoose": "^4.11.11",
+    "object-hash": "1.1.8"
+  }
+}
