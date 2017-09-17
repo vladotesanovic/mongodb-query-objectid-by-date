@@ -1,4 +1,4 @@
-# Excericse for querying data by ObjectID with date
+# Querying data by ObjectID with date
 
 Query MongoDB ObjectID by date.
 
