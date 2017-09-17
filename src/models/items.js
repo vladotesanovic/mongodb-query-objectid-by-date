@@ -1,29 +1,44 @@
 const { connection } = require('./connection');
 const mongoose = require('mongoose');
-const hash = require('object-hash');
+const objectHash = require('object-hash');
 
 const schema = new mongoose.Schema({
 	name: 'string',
-	size: 'string',
-	sum: 'string',
-	checksum: 'string'
+	email: 'string',
+	company: 'string',
+	address: 'string',
+	phone: 'string',
+	web: 'string',
+	checksum: 'string',
+	hash: 'string'
 });
 
-// as the second parameter if you want to use parallel middleware.
+// Only triggers after single item is saved
 schema.post('save', async(doc) => {
 
-	let res = doc;
-	res = doc._id.toString();
-
-	await Tank.where({ _id: doc._id }).update({
-		sum: hash(res),
+	await Person.where({ _id: doc._id }).update({
 		checksum: mongoose.Types.ObjectId()
 	});
 });
 
-const Tank = connection.model('Tank', schema);
+schema.statics.multipleInsert = (docs) => {
 
-exports.Tank = Tank;
+	docs.forEach((item) => {
+		item.checksum = mongoose.Types.ObjectId();
+		// item.hash = objectHash(removeIDFromObject(item));
+	});
+
+	return Person.insertMany(docs);
+};
+
+schema.statics.multipleUpdate = (docs) => {
+
+	// @TODO
+};
+
+const Person = connection.model('Person', schema);
+
+exports.Person = Person;
 
 /**
  * Generate ObjectID based on passed timestamp
@@ -32,6 +47,7 @@ exports.Tank = Tank;
  * @returns {mongoose.Types.ObjectId}
  */
 exports.objectIdWithTimestamp = (timestamp) => {
+
 	// Convert string date to Date object (otherwise assume timestamp is a date)
 	if (typeof(timestamp) === 'string') {
 		timestamp = new Date(timestamp);
@@ -63,4 +79,14 @@ function generateObjectIDBasedOnDate(date) {
 	return mongoose.Types.ObjectId(hexSeconds + "0000000000000000");
 }
 
+function removeIDFromObject(object) {
+	const newObject = {};
 
+	Object.keys(object).filter(key => key !== '_id').forEach((key) => {
+		Object.assign(newObject, {
+			[key]: object[key]
+		})
+	});
+
+	return newObject;
+}

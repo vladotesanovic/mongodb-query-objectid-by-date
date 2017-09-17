@@ -1,27 +1,22 @@
-const { Tank, objectIdWithTimestamp, generateObjectId } = require('./models/items');
+const { Person, objectIdWithTimestamp, generateObjectId } = require('./models/items');
+const { GeneratorService } = require('./services/generator.service');
 
 (async() => {
 
 	try {
 
-		// create few Dummy object in database
-		const tank = new Tank({ name: 'Zildjian', size: 10 });
-		await tank.save();
-
-		const all = await Tank.find();
-
-		for (const obj of all) {
-			console.log(obj._id.getTimestamp());
-		}
+		const generator = new GeneratorService();
+		await Person.multipleInsert(generator.generateFakeUsers(3));
 
 		// Generate 1 hour behind date
 		const currentDate = generateObjectId();
 
 		// Find all documents created after 2017/09/11
-		// objectIdWithTimestamp('2017/09/11 16:14:00')
-		console.log('Get all objects $gt ', currentDate.getTimestamp());
+		const dateInPast = objectIdWithTimestamp('2017/09/11 16:14:00');
 
-		const allAfter = await Tank.find({ _id: { $gt: currentDate } });
+		console.log('Get all objects $gt ', dateInPast.getTimestamp());
+
+		const allAfter = await Person.find({ _id: { $gt: dateInPast } });
 		console.log(allAfter);
 
 	} catch (e) {

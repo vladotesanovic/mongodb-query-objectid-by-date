@@ -3,6 +3,9 @@
   "version": "0.0.1",
   "description": "Excericse for comparing data by ObjectID",
   "license": "MIT",
+  "scripts": {
+    "start": "node ./src/app.js"
+  },
   "repository": {
     "url": "",
     "type": "GIT"
@@ -11,7 +14,8 @@
     "node": ">=8.4"
   },
   "dependencies": {
+    "faker": "^4.1.0",
     "mongoose": "^4.11.11",
-    "object-hash": "1.1.8"
+    "object-hash": "^1.1.8"
   }
 }
