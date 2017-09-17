@@ -2,13 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9aa6e44b-bd2c-4f9f-98ea-9ab94d87547c" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/package-lock.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/services/generator.service.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.MD" afterPath="$PROJECT_DIR$/README.MD" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app.js" afterPath="$PROJECT_DIR$/src/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/models/items.js" afterPath="$PROJECT_DIR$/src/models/items.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -42,16 +37,16 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="README.MD" pinned="false" current-in-tab="false">
+      <file leaf-file-name="README.MD" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/README.MD">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="180">
-                <caret line="12" column="4" lean-forward="false" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="4" />
+              <first_editor relative-caret-position="150">
+                <caret line="10" column="2" lean-forward="false" selection-start-line="10" selection-start-column="2" selection-end-line="10" selection-end-column="2" />
                 <folding>
-                  <marker date="1505646761149" expanded="true" signature="190:560" ph="{...}" />
-                  <marker date="1505646761149" expanded="true" signature="201:524" ph="{...}" />
-                  <marker date="1505646761149" expanded="true" signature="535:557" ph="{...}" />
+                  <marker date="1505647782782" expanded="true" signature="113:396" ph="{...}" />
+                  <marker date="1505647782782" expanded="true" signature="120:361" ph="{...}" />
+                  <marker date="1505647782782" expanded="true" signature="372:393" ph="{...}" />
                 </folding>
               </first_editor>
               <second_editor />
@@ -69,7 +64,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="items.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="items.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/models/items.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="481">
@@ -135,10 +130,10 @@
         <option value="$PROJECT_DIR$/src/models/connection.js" />
         <option value="$PROJECT_DIR$/src/app.mjs" />
         <option value="$PROJECT_DIR$/src/app.js" />
-        <option value="$PROJECT_DIR$/README.MD" />
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/src/services/generator.service.js" />
         <option value="$PROJECT_DIR$/src/models/items.js" />
+        <option value="$PROJECT_DIR$/README.MD" />
       </list>
     </option>
   </component>
@@ -273,7 +268,7 @@
       <workItem from="1505154941882" duration="209000" />
       <workItem from="1505380586427" duration="629000" />
       <workItem from="1505381354120" duration="1443000" />
-      <workItem from="1505645241315" duration="2410000" />
+      <workItem from="1505645241315" duration="2543000" />
     </task>
     <task id="LOCAL-00001" summary="Initial">
       <created>1505154918849</created>
@@ -303,11 +298,18 @@
       <option name="project" value="LOCAL" />
       <updated>1505155068717</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Improved query">
+      <created>1505647659467</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1505647659467</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11985000" />
+    <option name="totallyTimeSpent" value="12118000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="-4" width="1855" height="1084" extended-state="6" />
@@ -342,7 +344,8 @@
     <option name="CHECK_NEW_TODO" value="false" />
     <MESSAGE value="Initial" />
     <MESSAGE value="Remove .idea" />
-    <option name="LAST_COMMIT_MESSAGE" value="Remove .idea" />
+    <MESSAGE value="Improved query" />
+    <option name="LAST_COMMIT_MESSAGE" value="Improved query" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -424,9 +427,9 @@
           <first_editor relative-caret-position="90">
             <caret line="6" column="66" lean-forward="false" selection-start-line="6" selection-start-column="66" selection-end-line="6" selection-end-column="66" />
             <folding>
-              <marker date="1505646761149" expanded="true" signature="190:560" ph="{...}" />
-              <marker date="1505646761149" expanded="true" signature="201:524" ph="{...}" />
-              <marker date="1505646761149" expanded="true" signature="535:557" ph="{...}" />
+              <marker date="1505647782782" expanded="true" signature="113:396" ph="{...}" />
+              <marker date="1505647782782" expanded="true" signature="120:361" ph="{...}" />
+              <marker date="1505647782782" expanded="true" signature="372:393" ph="{...}" />
             </folding>
           </first_editor>
           <second_editor />
@@ -455,9 +458,9 @@
           <first_editor relative-caret-position="30">
             <caret line="2" column="31" lean-forward="false" selection-start-line="2" selection-start-column="31" selection-end-line="2" selection-end-column="31" />
             <folding>
-              <marker date="1505646761149" expanded="true" signature="190:560" ph="{...}" />
-              <marker date="1505646761149" expanded="true" signature="201:524" ph="{...}" />
-              <marker date="1505646761149" expanded="true" signature="535:557" ph="{...}" />
+              <marker date="1505647782782" expanded="true" signature="113:396" ph="{...}" />
+              <marker date="1505647782782" expanded="true" signature="120:361" ph="{...}" />
+              <marker date="1505647782782" expanded="true" signature="372:393" ph="{...}" />
             </folding>
           </first_editor>
           <second_editor />
@@ -517,9 +520,9 @@
           <first_editor relative-caret-position="30">
             <caret line="2" column="31" lean-forward="false" selection-start-line="2" selection-start-column="31" selection-end-line="2" selection-end-column="31" />
             <folding>
-              <marker date="1505646761149" expanded="true" signature="190:560" ph="{...}" />
-              <marker date="1505646761149" expanded="true" signature="201:524" ph="{...}" />
-              <marker date="1505646761149" expanded="true" signature="535:557" ph="{...}" />
+              <marker date="1505647782782" expanded="true" signature="113:396" ph="{...}" />
+              <marker date="1505647782782" expanded="true" signature="120:361" ph="{...}" />
+              <marker date="1505647782782" expanded="true" signature="372:393" ph="{...}" />
             </folding>
           </first_editor>
           <second_editor />
@@ -571,9 +574,9 @@
           <first_editor relative-caret-position="30">
             <caret line="2" column="31" lean-forward="false" selection-start-line="2" selection-start-column="31" selection-end-line="2" selection-end-column="31" />
             <folding>
-              <marker date="1505646761149" expanded="true" signature="190:560" ph="{...}" />
-              <marker date="1505646761149" expanded="true" signature="201:524" ph="{...}" />
-              <marker date="1505646761149" expanded="true" signature="535:557" ph="{...}" />
+              <marker date="1505647782782" expanded="true" signature="113:396" ph="{...}" />
+              <marker date="1505647782782" expanded="true" signature="120:361" ph="{...}" />
+              <marker date="1505647782782" expanded="true" signature="372:393" ph="{...}" />
             </folding>
           </first_editor>
           <second_editor />
@@ -662,21 +665,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.MD">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="180">
-            <caret line="12" column="4" lean-forward="false" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="4" />
-            <folding>
-              <marker date="1505646761149" expanded="true" signature="190:560" ph="{...}" />
-              <marker date="1505646761149" expanded="true" signature="201:524" ph="{...}" />
-              <marker date="1505646761149" expanded="true" signature="535:557" ph="{...}" />
-            </folding>
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/mongoose/lib/model.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="355">
@@ -738,6 +726,21 @@
         <state relative-caret-position="481">
           <caret line="36" column="2" lean-forward="false" selection-start-line="36" selection-start-column="2" selection-end-line="36" selection-end-column="2" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.MD">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="150">
+            <caret line="10" column="2" lean-forward="false" selection-start-line="10" selection-start-column="2" selection-end-line="10" selection-end-column="2" />
+            <folding>
+              <marker date="1505647782782" expanded="true" signature="113:396" ph="{...}" />
+              <marker date="1505647782782" expanded="true" signature="120:361" ph="{...}" />
+              <marker date="1505647782782" expanded="true" signature="372:393" ph="{...}" />
+            </folding>
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
