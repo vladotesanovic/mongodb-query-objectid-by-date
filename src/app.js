@@ -6,6 +6,7 @@ const { GeneratorService } = require('./services/generator.service');
 	try {
 
 		const generator = new GeneratorService();
+
 		await Person.multipleInsert(generator.generateFakeUsers(3));
 
 		// Generate 1 hour behind date
@@ -17,7 +18,6 @@ const { GeneratorService } = require('./services/generator.service');
 		console.log('Get all objects $gt ', dateInPast.getTimestamp());
 
 		const allAfter = await Person.find({ _id: { $gt: dateInPast } });
-		console.log(allAfter);
 
 	} catch (e) {
 		console.log(e);

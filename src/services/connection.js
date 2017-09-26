@@ -6,6 +6,6 @@ mongoose.Promise = global.Promise;
  *
  * @type {MongooseThenable}
  */
-module.exports.connection = mongoose.connect('mongodb://localhost/test', {
-	useMongoClient: true
+module.exports.connection = mongoose.connect('mongodb://localhost/exercise', {
+	'useMongoClient': true
 });

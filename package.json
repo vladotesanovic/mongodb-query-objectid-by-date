@@ -15,7 +15,8 @@
   },
   "dependencies": {
     "faker": "^4.1.0",
-    "mongoose": "^4.11.11",
+    "mongoose": "^4.11.13",
+    "node-uuid": "^1.4.8",
     "object-hash": "^1.1.8"
   }
 }
